@@ -1,0 +1,163 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+#navbar{
+    /* border-bottom: 1px solid #ccc; */
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    background-color: #db4c3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 6px 9px #4c2521;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+#navbar ul li{
+    margin-left: 1em;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ 
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:  1em;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.form-checkbox{
+    flex-direction: row;
+}
+
+
+.form-control input, .form-control textarea{
+    padding: 5px;
+    border: none;
+    background-color: #fbf6f6;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container{
+  max-width: 450px;
+  margin: 2em auto;
+}
+
+.form-create{
+    border: 1px solid #db4c3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 2px #865853;
+}
+h1{
+    text-align: center;
+    margin-bottom: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #db4c3f;
+}
+
+#btn{
+    background-color: #db4c3f;
+    width: 70px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #f3493a;
+    box-shadow: 0px 2px 4px 2px #865853;
+    transition: 0.2s;
+  
+}
+
+.form-control input::placeholder, .form-control textarea::placeholder{
+    color: rgb(125, 122, 122);
+}
+
+.form-control label{
+    color: #865853;
+}
+
+.form-control input:focus, .form-control textarea:focus{
+    box-shadow:  3px 3px 3px #ccc;
+}
+
+
+
+.task-list{
+    list-style: none;
+    margin-top: 1em;
+    /* font-size: ; */
+}
+
+.task-list li{
+    padding: .5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list .title{
+    font-weight: bold;
+    color: #db4c3f;
+    transition: .5s;
+    font-size: 1.2em;
+}
+
+.task-list .title:hover{
+    color: #6e3630;
+}
+
+.actions{
+    display: flex;
+}
+
+.actions i{
+    font-size: 1.5em;
+    margin-right: .6em;
+    color: #333;
+
+}
+
+.actions i:hover{
+    color: #db4c3f;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.task-list form #deleteTask{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.title.done{
+    text-decoration:  line-through;
+    color: #ccc;
+}
